@@ -10,7 +10,7 @@ namespace Entidades
     {
         double numero;
 
-        public string SetNumero { set { this.numero = ValidarNumero(value); } }
+        public string SetNumero { set { numero = validarNumero(value); } }
         public Numero()
         {
             this.numero = 0;
@@ -23,10 +23,10 @@ namespace Entidades
 
         public Numero(string strNumero)
         {
-            this.numero = ValidarNumero(strNumero);
+            this.numero = validarNumero(strNumero);
         }
 
-        double ValidarNumero(string strNumero)
+        double validarNumero(string strNumero)
         {
             double auxNumero;
 
@@ -62,23 +62,12 @@ namespace Entidades
 
         public static string BinarioDecimal(string binario)
         {
-            string resultado = "Valor invalido";
-            double sum = 0;
-            char[] array = binario.ToCharArray();
-            Array.Reverse(array);
-
-            if (EsBinario(binario) == true)
+            string numeroBinario = "Valor invalido";
+            if (esBinario(binario)) 
             {
-                for (int i = 0; i < array.Length; i++)
-                {
-                    if (array[i] == '1')
-                    {
-                        sum += Math.Pow(2, i);
-                    }
-                }
-                resultado = sum.ToString();
+                numeroBinario = Convert.ToInt32(binario, 2).ToString();
             }
-            return resultado;
+            return numeroBinario;
         }
 
         public static string DecimalBinario(double numero)
@@ -125,7 +114,7 @@ namespace Entidades
             return resultado;
         }
 
-        static bool EsBinario(string binario)
+        static bool esBinario(string binario)
         {
             bool retorno = true;
             char[] arrayBinario = binario.ToCharArray();

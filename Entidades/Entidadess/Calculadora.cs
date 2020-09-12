@@ -12,7 +12,7 @@ namespace Entidades
         {
             string auxOperador;
             double resultado = 0;
-            auxOperador = ValidarOperador(Convert.ToChar(operador));
+            auxOperador = validarOperador(Convert.ToChar(operador));
             switch (auxOperador)
             {
                 case "+":
@@ -32,7 +32,7 @@ namespace Entidades
             return resultado;
         }
 
-        static string ValidarOperador(char operador)
+        static string validarOperador(char operador)
         {
             string retorno = "+";
 

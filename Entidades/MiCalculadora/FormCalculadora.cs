@@ -20,10 +20,10 @@ namespace MiCalculadora
 
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
-            Limpiar();
+            limpiar();
         }
 
-        private void Limpiar()
+        private void limpiar()
         {
             this.tb_Numero1.Clear();
             this.tb_Numero2.Clear();
@@ -37,10 +37,10 @@ namespace MiCalculadora
             {
                 this.cb_Operador.SelectedItem = "+";
             }
-            this.lbl_Resultado.Text = Operar(this.tb_Numero1.Text, this.tb_Numero2.Text, this.cb_Operador.SelectedItem.ToString()); 
+            this.lbl_Resultado.Text = operarNumeros(this.tb_Numero1.Text, this.tb_Numero2.Text, this.cb_Operador.SelectedItem.ToString()); 
         }
 
-        private static string Operar(string numero1, string numero2, string operador)
+        private static string operarNumeros(string numero1, string numero2, string operador)
         {
             double resultado = 0;
             Numero numeroUno = new Numero(numero1);
