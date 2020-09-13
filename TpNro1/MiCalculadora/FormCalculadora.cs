@@ -17,12 +17,14 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
+        /// <summary>
+        /// limpia la calculadora y setea un + en el operador
+        /// </summary>
         private void Limpiar()
         {
             this.txtNumero1.Clear();
@@ -40,6 +42,13 @@ namespace MiCalculadora
             this.lblResultado.Text = (Operar(this.txtNumero1.Text, this.txtNumero2.Text, this.cmbOperador.SelectedItem.ToString()).ToString()); 
         }
 
+        /// <summary>
+        /// Hace la operacion y la devuelve en formato double
+        /// </summary>
+        /// <param name="numero1">variable de tipo string, sera el 1er numero de la cuenta</param>
+        /// <param name="numero2">variable de tipo string, sera el 2do numero de la cuenta</param>
+        /// <param name="operador">variable de tipo string, es el operador de la cuenta </param>
+        /// <returns> Double: retorna el resultado de la cuenta </returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             double resultado = 0;
