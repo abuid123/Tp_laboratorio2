@@ -18,29 +18,29 @@ namespace MiCalculadora
             InitializeComponent();
         }
 
-        private void btn_Limpiar_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            limpiar();
+            Limpiar();
         }
 
-        private void limpiar()
+        private void Limpiar()
         {
-            this.tb_Numero1.Clear();
-            this.tb_Numero2.Clear();
-            this.cb_Operador.Text = "+";
-            this.lbl_Resultado.Text = "Resultado";
+            this.txtNumero1.Clear();
+            this.txtNumero2.Clear();
+            this.cmbOperador.Text = "+";
+            this.lblResultado.Text = "Resultado:";
         }
 
-        private void btn_Operar_Click(object sender, EventArgs e)
+        private void btnOperar_Click(object sender, EventArgs e)
         {
-            if (this.cb_Operador.SelectedItem == null) 
+            if (this.cmbOperador.SelectedItem == null) 
             {
-                this.cb_Operador.SelectedItem = "+";
+                this.cmbOperador.SelectedItem = "+";
             }
-            this.lbl_Resultado.Text = operarNumeros(this.tb_Numero1.Text, this.tb_Numero2.Text, this.cb_Operador.SelectedItem.ToString()); 
+            this.lblResultado.Text = (Operar(this.txtNumero1.Text, this.txtNumero2.Text, this.cmbOperador.SelectedItem.ToString()).ToString()); 
         }
 
-        private static string operarNumeros(string numero1, string numero2, string operador)
+        private static double Operar(string numero1, string numero2, string operador)
         {
             double resultado = 0;
             Numero numeroUno = new Numero(numero1);
@@ -48,23 +48,23 @@ namespace MiCalculadora
 
             resultado = Calculadora.Operar(numeroUno, numeroDos, operador);
 
-            return resultado.ToString();
+            return resultado;
 
         }
 
-        private void btn_Cerrar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btn_Binario_Click(object sender, EventArgs e)
+        private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            this.lbl_Resultado.Text = Numero.DecimalBinario(this.lbl_Resultado.Text);
+            this.lblResultado.Text = Numero.DecimalBinario(this.lblResultado.Text);
         }
 
-        private void btn_Decimal_Click(object sender, EventArgs e)
+        private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            this.lbl_Resultado.Text = Numero.BinarioDecimal(this.lbl_Resultado.Text.ToString());
+            this.lblResultado.Text = Numero.BinarioDecimal(this.lblResultado.Text.ToString());
         }
     }
 }
