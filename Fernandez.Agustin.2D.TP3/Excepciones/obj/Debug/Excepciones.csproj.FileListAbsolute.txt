@@ -1,0 +1,6 @@
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Excepciones\obj\Debug\Excepciones.pdb

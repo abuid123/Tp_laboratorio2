@@ -1,0 +1,16 @@
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Fernandez.Agustin.2D.TP3.exe.config
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Fernandez.Agustin.2D.TP3.exe
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Fernandez.Agustin.2D.TP3.pdb
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Archivos.dll
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Clases Abstractas.dll
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Clases Instanciables.dll
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Excepciones.dll
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Archivos.pdb
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Clases Abstractas.pdb
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Clases Instanciables.pdb
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\bin\Debug\Excepciones.pdb
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\obj\Debug\Fernandez.Agustin.2D.TP3.csprojAssemblyReference.cache
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\obj\Debug\Fernandez.Agustin.2D.TP3.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\obj\Debug\Fernandez.Agustin.2D.TP3.csproj.CopyComplete
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\obj\Debug\Fernandez.Agustin.2D.TP3.exe
+C:\Users\Agustin\source\repos\Fernandez.Agustin.2D.TP3\Fernandez.Agustin.2D.TP3\obj\Debug\Fernandez.Agustin.2D.TP3.pdb
