@@ -15,7 +15,7 @@ namespace Archivos
             StreamWriter streamWriter = null;
             try
             {
-                streamWriter = new StreamWriter(archivo);
+                streamWriter = new StreamWriter(archivo,true);
                 streamWriter.Write(datos);
                 retorno = true;
             }

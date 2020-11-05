@@ -1,0 +1,22 @@
+Clase de: Programacion
+Profesor: Nombre y apellido: Juan Lopez
+Dni: 12224458
+Nacionalidad: Argentino
+
+Legajo numero: 1
+
+
+Clase de: SPD
+Profesor: Nombre y apellido: Juan Lopez
+Dni: 12224458
+Nacionalidad: Argentino
+
+Legajo numero: 1
+
+Clase de: SPD
+Profesor: Nombre y apellido: Juan Lopez
+Dni: 12224458
+Nacionalidad: Argentino
+
+Legajo numero: 1
+

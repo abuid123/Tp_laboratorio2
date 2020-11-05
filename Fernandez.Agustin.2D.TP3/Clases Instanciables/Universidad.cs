@@ -154,7 +154,15 @@ namespace Clases_Instanciables
 
         public static bool operator ==(Universidad g, Profesor i)
         {
-            return g.profesores.Contains(i);
+            foreach (var item in g.jornada)
+            {
+                if (item.Instructor == i)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public static Profesor operator !=(Universidad g, EClases clase)
@@ -178,7 +186,7 @@ namespace Clases_Instanciables
                     return profesor;
                 }
             }
-            throw new SinProfesorException();
+            throw new SinProfesorException("No hay profesor disponible para esta clase");
         }
 
         public static Universidad operator +(Universidad g, EClases clase)
@@ -201,7 +209,7 @@ namespace Clases_Instanciables
             if (u == a)
             {
                 
-                throw new AlumnoRepetidoException();
+                throw new AlumnoRepetidoException("El alumno que intenta agregar ya fue cargado antes");
             }
             else
             {
@@ -213,7 +221,7 @@ namespace Clases_Instanciables
 
         public static Universidad operator +(Universidad u, Profesor i)
         {
-            if (!u.profesores.Contains(i))
+            if (u != i)
             {
                 u.profesores.Add(i);
             }

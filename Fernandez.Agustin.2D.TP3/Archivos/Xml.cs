@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.IO;
 using System.Xml.Serialization;
 using Excepciones;
 namespace Archivos
@@ -37,14 +38,17 @@ namespace Archivos
 
         public bool Leer(string archivo, out T datos)
         {
-            bool retorno = false;
             XmlTextReader reader = null;
+            datos = default(T);
             try
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(T));
-                reader = new XmlTextReader(archivo);
-                datos = (T)serializer.Deserialize(reader);
-                retorno = true;
+                if (File.Exists(archivo))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(T));
+                    reader = new XmlTextReader(archivo);
+                    datos = (T)serializer.Deserialize(reader);
+                    return true;
+                }
             }
             catch (Exception e)
             {
@@ -55,7 +59,7 @@ namespace Archivos
                 if (!(reader is null))
                     reader.Close();
             }
-            return retorno;
+            return false;
         }
     }
 }
